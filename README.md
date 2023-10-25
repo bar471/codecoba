@@ -1,6 +1,7 @@
-# codecoba
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, Git!");
+@RestController
+public class HelloController {
+    @GetMapping("/")
+    public String sayHello() {
+        return "Hello, Git!";
     }
 }
